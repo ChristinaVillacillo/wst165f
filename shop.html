@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head> 
+
+<title>Shop Vegan Cakes</title>
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+<left><div class="brand"> Delicious Vegan Cakes</div> </left>
+
+<nav class="top-navigation">
+    
+<ul>    
+<li><a href="index.html" >HOME</a> </li>
+<li><a href="about.html" >ABOUT US</a></li>
+<li><a href="contact.html" >CONTACT</a></li>
+<li><a href="shop.html" >SHOP</a></li>
+
+</ul>    
+</nav>
+
+<br/>
+    
+<div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/gallery_1.jpg" style="width:100%">
+        <div class="text">Mangoes</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/gallery_2.jpg" style="width:100%">
+        <div class="text">Berries</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/gallery_3.jpg" style="width:100%">
+        <div class="text">Strawberries</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div> 
+     <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+     <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+</head>
+
+<center><body>
+
+  <figure>
+          <h1>Pick your cravings </h1> 
+<image src="images/image_4.jpg" width="30%"></image>
+      
+        
+       <image src="images/image_5.jpg" width="30%"></image>
+     <image src="images/image_6.jpg" width="30%"></image>
+    <image src="images/image_7.jpg" width="30%"></image>
+     <image src="images/image_8.jpg" width="30%"></image>
+    <image src="images/image_10.jpg" width="30%"></image>
+      
+    </figure>
+      
+    
+</body></center>
+
+<center><footer style="width:100%;height:100%;background-color: antiquewhite;">
+   
+  <h4 style="width:30%;color:dimgrey;">For more information vist our <a href="http://www.google.com" target="_blank" style="color:dimgrey;"><big>main website</big></a> or <a href="mailto:christina.vil.lapc@gmail.com" style="color:dimgrey;"><big>click here</big></a> to send us email</h4> 
+</footer></center> 
+
